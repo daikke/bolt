@@ -83,7 +83,6 @@
     overflow: hidden;
   }
   .main__heading__iphone{
-    padding-right: 150px;
     display: block;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -247,11 +246,15 @@
 .inner{
   width: 1100px;
 }
+.top-header{
+  width: 100%;
+}
 .main__heading{
   padding: 50px 50px 0 50px;
 }
 .main__heading__iphone{
   float: left;
+  padding-right: 150px;
 }
 .main__heading__article{
   text-align: center;
