@@ -15,12 +15,9 @@
   .raleway{
     font-family: "Raleway";
   }
-  .lato{
+  .body{
     font-family: "Lato";
     font-weight: 300;
-  }
-  .body{
-    width:100%;
   }
   .inner{
     width: 97%;
@@ -46,6 +43,7 @@
     font-size: 12px;
     padding: 14px 12px;
     transition-duration: 0.3s;
+    text-decoration: none;
   }
   .top-header__contact:hover{
     color: #333;
@@ -62,6 +60,7 @@
     padding: 0px 13px
   }
   .main__theme{
+    margin-top: 78px;
     background-color: #f2f2f2;
     padding-top: 160px;
     padding-bottom: 130px;
@@ -71,7 +70,7 @@
     color: #74cfae;
     font-weight: 700;
     font-size: 80px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .main__theme__subtitle{
     color:#c0c0c0;
@@ -80,12 +79,11 @@
   .main__heading{
     background-color: #74cfae;
     padding: 50px 50px 25px 50px;
-    overflow: hidden;
   }
   .main__heading__iphone{
     display: block;
     margin: 0 auto;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .main__heading__article{
     text-align: center;
@@ -94,7 +92,7 @@
     color: white;
     font-size: 24px;
     font-weight: 300;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
   }
   .main__heading__article__text{
     color: white;
@@ -108,35 +106,29 @@
   .main__content__title{
     font-size: 24px;
     text-align: center;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     font-weight: 300;
   }
   .main__content__figures{
-    padding: auto;
     text-align: center;
   }
-  .main__content__figures__products{
+  .main__content__figures__products img{
     opacity: 0.7;
     transition-duration: 0.3s;
     display: block;
     margin: 0 auto;
   }
-  .main__content__figures__products:hover{
+  .main__content__figures__products img:hover{
     opacity: 1;
   }
   .main__content__figures__products:nth-child(3n){
-    padding-bottom: 80px;
-  }
-  .main__content__footer{
-    overflow: hidden;
-    padding-top: 0px;
+    margin-bottom: 80px;
   }
   .main__content__footer__text{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
     color: #333;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 40px;
   }
   .main__content__footer__mail::before{
     background-color: transparent;
@@ -152,7 +144,6 @@
     font-size: 12px;
     padding: 14px 20px;
     transition-duration: 0.3s;
-    display: block;
     margin: 0 auto;
   }
   .main__content__footer__mail:hover{
@@ -161,19 +152,24 @@
   .main__skills{
     background-color: #4e4e4e;
     text-align: center;
-    overflow: hidden;
-    padding:  70px 0px 0px 0px;
+    padding:  70px 0px 100px 0px;
   }
   .main__skills__title{
     color: white;
     font-weight: 300;
   }
   .main__skills__list__box{
-    padding: 0px 90px 88px 90px;
+    margin: 0 auto;
     text-align: center;
+    margin-bottom: 88px;
+  }
+  .main__skills__list__box:first-child{
+
+    margin-top: 70px;
   }
   .main__skills__list__box:nth-child(4){
-    padding: 0px 90px 0px 90px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     text-align: center;
   }
   .main__skills__list__box__text{
@@ -189,7 +185,6 @@
   .main__sns__list i{
     color: #74cfae;
     padding: 20px 0;
-    text-align: center;
     transition-duration: 0.3s;
     display: block;
   }
@@ -208,13 +203,7 @@
 }
 @media screen and (min-width:768px)/*tabスケール*/{
   .top-header__contact{
-    background-color: #74cfae;
-    color: white;
     display: block;
-    float: right;
-    font-size: 12px;
-    padding: 14px 12px;
-    transition-duration: 0.3s;
   }
   .top-header__humberger{
     display: none;
@@ -226,18 +215,11 @@
   .main__theme__title{
     font-size: 90px;
   }
-  .main__skills{
-    padding:  70px 0px 100px 0px;
-  }
-  .main__skills__list{
-    margin: 70px 0 0 0;
-  }
   .main__sns{
     padding: 200px 0px;
   }
   .main__sns__list i{
-    margin: 0 auto;
-    width: 185px;
+    width: 175px;
     display: inline-block;
   }
 }
@@ -253,46 +235,50 @@
   padding: 50px 50px 0 50px;
 }
 .main__heading__iphone{
-  float: left;
-  padding-right: 150px;
+  margin-bottom: 0;
+  margin-right: 200px;
+  display: inline-block;
 }
 .main__heading__article{
-  text-align: center;
+  vertical-align: top;
+  width: 650px;
+  display: inline-block;
 }
 .main__content__figures{
   font-size: 0;
 }
 .main__content__figures__products{
-  padding: 0px 100px 80px 0px;
+  margin: 0px 100px 80px 0px;
   display: inline-block;
 }
 .main__content__figures__products:nth-child(3n){
-  padding-right: 0px;
+  margin-right: 0px;
 }
 .main__content__figures__products:nth-child(n+3){
-  padding-bottom: 90px;
-}
-.main__content__footer{
-  text-align: center;
-  vertical-align: top;
+  margin-bottom: 90px;
 }
 .main__content__footer__text{
-  width: 60%;
+  width: 50%;
   display: inline-block;
-  padding-bottom: 0;
-  padding-right: 90px;
+  margin-bottom: 0;
+  margin-right: 90px;
+  vertical-align: top;
 }
 .main__content__footer__mail{
   display: inline-block;
 }
 .main__skills__list__box{
-  float: left;
-  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-right: 180px;
+  display: inline-block;
 }
 .main__skills__list__box:first-child{
-  padding-left: 0;
+  margin-left: 0;
 }
 .main__skills__list__box:last-child{
-  padding-right: 0;
+  margin-right: 0;
+}
+.main__sns__list i{
+  width: 185px;
 }
 }
