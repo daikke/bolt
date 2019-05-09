@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@media screen and (min-width:0px)/*spスケール*/{
   .clearfix{
     content: "";
     display: block;
@@ -20,7 +19,7 @@
     font-weight: 300;
   }
   .inner{
-    width: 97%;
+    width: 1100px;
     margin: 0 auto;
   }
   .top-header{
@@ -28,7 +27,7 @@
     padding:15px;
     position: fixed;
     top:  0px;
-    width: 97%;
+    width: 100%;
     z-index: 2;
     margin: 0 auto;
   }
@@ -38,7 +37,7 @@
   .top-header__contact{
     background-color: #74cfae;
     color: white;
-    display: none;
+    display: block;
     float: right;
     font-size: 12px;
     padding: 14px 12px;
@@ -49,27 +48,19 @@
     color: #333;
   }
   .top-header__humberger{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    float: right;
-    padding: 10px 10px 5px 10px;
-  }
-  .top-header__humberger__inborder{
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
-    padding: 0px 13px
+    display: none;
   }
   .main__theme{
     margin-top: 78px;
     background-color: #f2f2f2;
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding-top: 250px;
+    padding-bottom: 250px;
     text-align: center;
   }
   .main__theme__title{
     color: #74cfae;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 90px;
     margin-bottom: 20px;
   }
   .main__theme__subtitle{
@@ -78,15 +69,18 @@
   }
   .main__heading{
     background-color: #74cfae;
-    padding: 50px 50px 25px 50px;
+    padding: 50px 50px 0 50px;
   }
   .main__heading__iphone{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-right: 200px;
+    display: inline-block;
   }
   .main__heading__article{
     text-align: center;
+    vertical-align: top;
+    width: 650px;
+    display: inline-block;
   }
   .main__heading__article__title{
     color: white;
@@ -111,23 +105,33 @@
   }
   .main__content__figures{
     text-align: center;
+    font-size: 0;
   }
-  .main__content__figures__products img{
+  .main__content__figures__products {
+    margin: 0px 100px 80px 0px;
+    display: inline-block;
+  }
+  .main__content__figures__products a{
     opacity: 0.7;
     transition-duration: 0.3s;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
   }
-  .main__content__figures__products img:hover{
+  .main__content__figures__products a:hover{
     opacity: 1;
   }
   .main__content__figures__products:nth-child(3n){
-    margin-bottom: 80px;
+    margin-right: 0px;
+  }
+  .main__content__figures__products:nth-child(n+3){
+    margin-bottom: 90px;
   }
   .main__content__footer__text{
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 40px;
+    width: 50%;
+    display: inline-block;
+    margin-right: 90px;
+    vertical-align: top;
     color: #333;
   }
   .main__content__footer__mail::before{
@@ -145,6 +149,8 @@
     padding: 14px 20px;
     transition-duration: 0.3s;
     margin: 0 auto;
+    display: inline-block;
+    text-decoration: none;
   }
   .main__content__footer__mail:hover{
     color: #333
@@ -157,15 +163,11 @@
   .main__skills__title{
     color: white;
     font-weight: 300;
+    margin-bottom: 70px;
   }
   .main__skills__list__box{
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 88px;
-  }
-  .main__skills__list__box:first-child{
-
-    margin-top: 70px;
+    margin-right: 180px;
+    display: inline-block;
   }
   .main__skills__list__box:nth-child(4){
     margin-right: 0px;
@@ -177,7 +179,7 @@
   }
   .main__sns{
     background-color: #f2f2f2;
-    padding: 50px 15px;
+    padding: 200px 0px;
   }
   .main__sns__list{
     text-align: center;
@@ -186,10 +188,14 @@
     color: #74cfae;
     padding: 20px 0;
     transition-duration: 0.3s;
-    display: block;
+    width: 185px;
+    display: inline-block;
   }
   .main__sns__list i:hover{
     background-color: white;
+  }
+  .main__sns__list a{
+    display: inline-block;
   }
   footer{
     background-color: #74cfae;
@@ -200,85 +206,93 @@
     color: white;
     float: right;
   }
-}
-@media screen and (min-width:768px)/*tabスケール*/{
-  .top-header__contact{
+@media screen and (max-width:1199px)/*tabスケール*/{
+  .inner{
+    width: 97%;
+  }
+  .main__heading{
+    padding: 50px 50px 25px 50px;
+  }
+  .main__heading__iphone{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .main__heading__article{
+    display: block;
+    width: 100%;
+  }
+  .main__content__figures{
+    padding: 0;
+  }
+  .main__content__figures__products{
     display: block;
   }
-  .top-header__humberger{
-    display: none;
+  .main__content__figures__products{
+    padding: 0;
+    margin: 0 auto;
   }
-  .main__theme{
-    padding-top: 250px;
-    padding-bottom: 250px;
+  .main__content__figures__products:nth-child(n+3){
+    margin-bottom: 0px;
   }
-  .main__theme__title{
-    font-size: 90px;
+  .main__content__figures__products:nth-child(3n){
+    margin-right: 0px;
+    margin-bottom: 80px;
   }
-  .main__sns{
-    padding: 200px 0px;
+  .main__content__footer__text{
+    display: block;
+    margin-bottom: 40px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .main__skills__list__box{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 88px;
+  }
+  .main__skills__list__box:first-child{
+    margin-top: 70px;
   }
   .main__sns__list i{
-    width: 175px;
+    width: 185px;
     display: inline-block;
   }
 }
-@media screen and (min-width: 1200px)/*pcスケール*/{
-
-.inner{
-  width: 1100px;
-}
-.top-header{
-  width: 100%;
-}
-.main__heading{
-  padding: 50px 50px 0 50px;
-}
-.main__heading__iphone{
-  margin-bottom: 0;
-  margin-right: 200px;
-  display: inline-block;
-}
-.main__heading__article{
-  vertical-align: top;
-  width: 650px;
-  display: inline-block;
-}
-.main__content__figures{
-  font-size: 0;
-}
-.main__content__figures__products{
-  margin: 0px 100px 80px 0px;
-  display: inline-block;
-}
-.main__content__figures__products:nth-child(3n){
-  margin-right: 0px;
-}
-.main__content__figures__products:nth-child(n+3){
-  margin-bottom: 90px;
-}
-.main__content__footer__text{
-  width: 50%;
-  display: inline-block;
-  margin-bottom: 0;
-  margin-right: 90px;
-  vertical-align: top;
-}
-.main__content__footer__mail{
-  display: inline-block;
-}
-.main__skills__list__box{
-  margin-bottom: 0;
-  margin-right: 180px;
-  display: inline-block;
-}
-.main__skills__list__box:first-child{
-  margin-left: 0;
-}
-.main__skills__list__box:last-child{
-  margin-right: 0;
-}
-.main__sns__list i{
-  width: 185px;
-}
+@media screen and (max-width: 767px)/*spスケール*/{
+  .top-header__contact{
+    display: none;
+  }
+  .top-header__humberger{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: right;
+    display: block;
+    padding: 10px 10px 5px 10px;
+  }
+  .top-header__humberger__inborder{
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 0px 13px
+  }
+  .main__theme{
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+  .main__sns{
+    padding: 50px 0;
+  }
+  .main__sns__list{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main__sns__list a{
+    width: 100%;
+  }
+  .main__sns__list i{
+    color: #74cfae;
+    padding: 20px 0;
+    transition-duration: 0.3s;
+    width: 100%;
+  }
 }
