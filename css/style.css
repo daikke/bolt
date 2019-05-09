@@ -160,10 +160,8 @@
     margin-right: 180px;
     display: inline-block;
   }
-  .main__skills__list figure:nth-child(4){
+  .main__skills__list figure:last-child{
     margin-right: 0px;
-    margin-bottom: 0px;
-    text-align: center;
   }
   .main__skills__list__box__text{
     color: white;
@@ -202,7 +200,7 @@
     width: 97%;
   }
   .main__heading{
-    padding: 50px 50px 25px 50px;
+    padding: 50px 0 25px 0;
   }
   .main__heading__iphone{
     display: block;
@@ -210,20 +208,13 @@
     margin-bottom: 20px;
   }
   .main__heading__article{
-    display: block;
     width: 100%;
   }
-  .main__content__figures{
-    padding: 0;
-  }
   .main__content__figures__products{
     display: block;
-  }
-  .main__content__figures__products{
-    padding: 0;
     margin: 0 auto;
   }
-  .main__content__figures__products:nth-child(n+3){
+  .main__content__figures__products:last-child{
     margin-bottom: 0px;
   }
   .main__content__figures__products:nth-child(3n){
@@ -231,7 +222,6 @@
     margin-bottom: 80px;
   }
   .main__content__footer__text{
-    display: block;
     margin-bottom: 40px;
     margin-right: 0;
     width: 100%;
@@ -239,15 +229,14 @@
   .main__skills__list figure{
     margin: 0 auto;
     display: block;
-    text-align: center;
     margin-bottom: 88px;
   }
   .main__skills__list figure:first-child{
     margin-top: 70px;
   }
-  .main__sns__list i{
-    width: 185px;
-    display: inline-block;
+
+  .main__skills__list figure:last-child{
+    margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 767px)/*spスケール*/{
@@ -259,12 +248,15 @@
     border-radius: 4px;
     float: right;
     display: block;
-    padding: 10px 10px 5px 10px;
+    padding: 10px;
   }
   .top-header__humberger__inborder{
     border: 1px solid #ddd;
     margin-bottom: 5px;
     padding: 0px 13px
+  }
+  .top-header__humberger .top-header__humberger__inborder:last-child{
+    margin-bottom: 0;
   }
   .main__theme{
     padding-top: 160px;
@@ -273,17 +265,7 @@
   .main__sns{
     padding: 50px 0;
   }
-  .main__sns__list{
-    text-align: center;
-    margin: 0 auto;
-  }
   .main__sns__list a{
-    width: 100%;
-  }
-  .main__sns__list i{
-    color: #74cfae;
-    padding: 20px 0;
-    transition-duration: 0.3s;
     width: 100%;
   }
 }
