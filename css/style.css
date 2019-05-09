@@ -199,6 +199,9 @@
   .inner{
     width: 97%;
   }
+  .top-header{
+    padding: 15px 0;
+  }
   .main__heading{
     padding: 50px 0 25px 0;
   }
@@ -214,12 +217,12 @@
     display: block;
     margin: 0 auto;
   }
-  .main__content__figures__products:last-child{
-    margin-bottom: 0px;
-  }
   .main__content__figures__products:nth-child(3n){
     margin-right: 0px;
     margin-bottom: 80px;
+  }
+  .main__content__figures__products:last-child{
+    margin-bottom: 0px;
   }
   .main__content__footer__text{
     margin-bottom: 40px;
