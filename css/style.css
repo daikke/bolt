@@ -1,22 +1,15 @@
 @charset "UTF-8";
-  .clearfix{
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .clear{
-    appearance: none;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 0;
+  body{
+    font-family: "Lato";
+    font-weight: 300;
   }
   .raleway{
     font-family: "Raleway";
   }
-  .body{
-    font-family: "Lato";
-    font-weight: 300;
+  .clearfix{
+    content: "";
+    display: block;
+    clear: both;
   }
   .inner{
     width: 1100px;
@@ -69,12 +62,13 @@
   }
   .main__heading{
     background-color: #74cfae;
-    padding: 50px 50px 0 50px;
+    padding-top: 50px;
   }
   .main__heading__iphone{
     margin-bottom: 0;
     margin-right: 200px;
     display: inline-block;
+    vertical-align: bottom;
   }
   .main__heading__article{
     text-align: center;
@@ -106,6 +100,7 @@
   .main__content__figures{
     text-align: center;
     font-size: 0;
+    margin-bottom: 90px;
   }
   .main__content__figures__products {
     margin: 0px 100px 80px 0px;
@@ -122,8 +117,11 @@
   .main__content__figures__products:nth-child(3n){
     margin-right: 0px;
   }
-  .main__content__figures__products:nth-child(n+3){
-    margin-bottom: 90px;
+  .main__content__figures__products:nth-last-child(-n+3){
+    margin-bottom: 0px;
+  }
+  .main__content__footer{
+    text-align: center;
   }
   .main__content__footer__text{
     font-size: 20px;
@@ -133,14 +131,7 @@
     margin-right: 90px;
     vertical-align: top;
     color: #333;
-  }
-  .main__content__footer__mail::before{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-    appearance: none;
+    text-align: center;
   }
   .main__content__footer__mail{
     background-color: #74cfae;
@@ -165,11 +156,11 @@
     font-weight: 300;
     margin-bottom: 70px;
   }
-  .main__skills__list__box{
+  .main__skills__list figure{
     margin-right: 180px;
     display: inline-block;
   }
-  .main__skills__list__box:nth-child(4){
+  .main__skills__list figure:nth-child(4){
     margin-right: 0px;
     margin-bottom: 0px;
     text-align: center;
@@ -191,11 +182,11 @@
     width: 185px;
     display: inline-block;
   }
-  .main__sns__list i:hover{
-    background-color: white;
-  }
   .main__sns__list a{
     display: inline-block;
+  }
+  .main__sns__list a:hover{
+    background-color: white;
   }
   footer{
     background-color: #74cfae;
@@ -204,7 +195,7 @@
   }
   .footer__text{
     color: white;
-    float: right;
+    text-align: right;
   }
 @media screen and (max-width:1199px)/*tabスケール*/{
   .inner{
@@ -245,13 +236,13 @@
     margin-right: 0;
     width: 100%;
   }
-  .main__skills__list__box{
+  .main__skills__list figure{
     margin: 0 auto;
     display: block;
     text-align: center;
     margin-bottom: 88px;
   }
-  .main__skills__list__box:first-child{
+  .main__skills__list figure:first-child{
     margin-top: 70px;
   }
   .main__sns__list i{
