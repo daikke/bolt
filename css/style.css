@@ -153,6 +153,7 @@
   }
   .main__skills__title{
     color: white;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 70px;
   }
@@ -172,16 +173,18 @@
   }
   .main__sns__list{
     text-align: center;
+    font-size: 0;
   }
   .main__sns__list i{
     color: #74cfae;
     padding: 20px 0;
     transition-duration: 0.3s;
-    width: 185px;
     display: inline-block;
+    font-size: 40px;
   }
   .main__sns__list a{
     display: inline-block;
+    width: 25%;
   }
   .main__sns__list a:hover{
     background-color: white;
